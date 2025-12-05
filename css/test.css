@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item { 
+  flex-basis: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  border: 6px solid darkred;
+  margin: 10px;
+  
+}
+
+.item:nth-child(2) {
+  order: 4;
+  flex-basis: 50px;
+  height: 50px;
+  align-self: center;
+}
