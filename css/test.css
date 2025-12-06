@@ -2,26 +2,38 @@
   box-sizing: border-box;
 }
 
-.flex-conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.container {
+  padding: 30px;
+  border: 1px dotted black;
 }
 
-.item { 
-  flex-basis: 100px;
+.parent {
+  padding: 20px;
+  border: 1px dotted black;
+}
+
+.item.red {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: white;
+}
+
+.item.green {
+  width: 100px;
   height: 100px;
-  background-color: burlywood;
-  padding: 10px;
-  border: 6px solid darkred;
-  margin: 10px;
-  
+  background-color: green;
 }
 
-.item:nth-child(2) {
-  order: 4;
-  flex-basis: 50px;
+.item.blue {
+  width: 50px;
   height: 50px;
-  align-self: center;
+  background-color: blue;
+}
+
+.section-title {
+  position: sticky;
+  top: 0;
+  background-color: blueviolet;
 }

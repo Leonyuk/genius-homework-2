@@ -98,13 +98,6 @@ address {
   font-style: normal;
 }
 
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0px auto;
-  padding: 0px 24px;
-}
-
 .h1 {
   font-family: var(--font-title);
   font-weight: 700;
@@ -157,6 +150,13 @@ address {
   font-family: var(--font-main);
   font-weight: 400;
   font-size: var(--h9-size);
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0px auto;
+  padding: 0px 24px;
 }
 
 .accent {
@@ -609,13 +609,26 @@ address {
 /* #region footer */
 
 .footer-section {
+  position: relative;
   background-color: var(--color-background-footer);
-  background-image: url(../images/img/bg-footer.png);
+  background-image: url(../images/img/bg-footer.png.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   overflow: hidden;
-  padding: 56px 0px;
+  padding: 56px 24px;
+  margin: 0px;
+}
+
+.footer-section::after {
+  position: absolute;
+  background-image: url(../images/img/footer-PhotoRoom.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 150px;
+  bottom: 0;
+  right: 0;
+  content: "";
 }
 
 .footer-container {
@@ -737,3 +750,43 @@ address {
   color: var(--color-primary-dark);
 }
 /* #endregion footer */
+/* #region modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+}
+
+.modal {
+  position: relative;
+  width: 720px;
+  height: 680px;
+  background-color: var(--color-secondary-dark);
+  border-radius: 48px;
+}
+
+/* .modal-btn-open {
+
+} */
+
+.modal-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+/* #endregion modal */
