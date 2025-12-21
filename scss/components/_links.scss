@@ -1,0 +1,58 @@
+.header-link {
+  color: var(--color-secondary-dark);
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  color: var(--color-brand);
+}
+
+.header-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-address-link {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-address-link:hover {
+  color: var(--color-primary-dark);
+}
+
+.footer-social-link {
+  color: var(--color-primary-light);
+}
+
+.footer-link:hover {
+  color: var(--color-primary-dark);
+}
+
+.form_policy_link {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-modal-form);
+  text-underline-offset: 2px;
+}

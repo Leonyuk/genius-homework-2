@@ -1,0 +1,84 @@
+.hero_button {
+  margin-bottom: 14px;
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  padding: 16px 32px;
+  height: 54px;
+  background-color: transparent;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-secondary-dark);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.hero_button:hover {
+  background-color: var(--color-brand);
+  color: var(--color-primary-light);
+}
+
+.form_button {
+  padding: 16px 32px;
+  height: 54px;
+  border: 2px solid var(--color-brand);
+  background-color: transparent;
+  border-radius: 48px;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.form_button:hover {
+  background-color: var(--color-brand);
+  color: var(--color-primary-light);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid var(--color-secondary-dark);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.slider-btn:hover {
+  background-color: var(--color-brand);
+}
+
+.modal-btn-open {
+  cursor: pointer;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  cursor: not-allowed;
+}
