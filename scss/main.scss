@@ -31,73 +31,8 @@
   src: url("../fonts/play-v21-latin-700.woff2") format("woff2");
 }
 /* #endregion font-face */
-/* #region root */
-:root {
-  --color-brand: #2b7fff;
-  --color-primary-dark: #000000;
-  --color-primary-light: #ffffff;
-  --color-secondary-dark: #011c44;
-  --color-secondary-grey: #4a4a4a;
-  --color-background-footer: #011f4a;
-  --color-background-procedure-card: #d9d9d9;
-  --color-modal-form: #747272;
-  --color-star-active: #7DF9FF;
-  --font-title: "Play", sans-serif;
-  --font-main: "Roboto", sans-serif;
-  --h1-size: 64px;
-  --h2-size: 32px;
-  --h3-size: 22px;
-  --h4-size: 22px;
-  --h5-size: 18px;
-  --h6-size: 16px;
-  --h7-size: 13px;
-  --h8-size: 14px;
-  --h9-size: 12px;
-  --lh-normal: normal;
-  --lh-38: 38px;
-  --lh-18: 18px;
-  --ls-normal: normal;
-}
-/* #endregion root */
-/* #region general */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  --color-brand: #2b7fff;
-  font-family: var(--font-main);
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  display: inline-block;
-}
-
-address {
-  font-style: normal;
-}
+@import "./utils/variables";
+@import "./base";
 
 .visually_hidden {
   position: absolute;
@@ -187,7 +122,6 @@ address {
   cursor: not-allowed;
 }
 
-/* #endregion general */
 /* #region header */
 .header {
   position: absolute;
@@ -198,11 +132,11 @@ address {
   align-content: center;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
-}
 
-.header-container {
-  display: flex;
-  align-items: center;
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-nav {
@@ -363,7 +297,6 @@ address {
   50% {
     transform: rotate(360deg);
     opacity: 1;
-    
   }
   75% {
     transform: rotate(-180deg);
@@ -372,7 +305,7 @@ address {
   100% {
     transform: rotate(0deg) scale(1.5);
     opacity: 1;
-    fill: #7DF9FF;
+    fill: #7df9ff;
   }
 }
 
@@ -381,7 +314,7 @@ address {
   left: 70%;
   fill: var(--color-background-footer);
   transform: rotate(4deg);
-  animation-delay: 1s; 
+  animation-delay: 1s;
   animation-duration: 5s;
 }
 
@@ -397,7 +330,8 @@ address {
   top: 270px;
   right: 18px;
   fill: var(--color-modal-form);
-  transform: rotate(0deg);animation-delay: 3s;
+  transform: rotate(0deg);
+  animation-delay: 3s;
 }
 
 .about-text-wrapper {
