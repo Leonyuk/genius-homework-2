@@ -914,6 +914,7 @@ address {
   height: 100%;
   max-height: 680px;
   padding: 42px 144px;
+  background-image: url(../images/img/modal_background_vektor.png);
   background-color: var(--color-secondary-dark);
   border-radius: 48px;
   overflow-y: auto;
