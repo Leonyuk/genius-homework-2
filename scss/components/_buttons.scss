@@ -39,7 +39,10 @@
 .button {
   display: block;
   margin: 0 auto;
+  font-family: inherit;
+  cursor: pointer;
 }
+
 
 .slider-btn {
   display: flex;
@@ -57,7 +60,9 @@
 
 .slider-btn:hover {
   background-color: var(--color-brand);
+  stroke: var(--color-primary-light);
 }
+
 
 .modal-btn-open {
   cursor: pointer;

@@ -1,13 +1,19 @@
-@import "./utilits/_fonts.scss";
-@import "./utils/_variables/scss";
-@import "./_base.scss";
-@import "./utilits/_utils.scss";
 
-@import "./components/_buttons.scss";
-@import "./components/_links.scss";
-@import "./components/_header.scss";
-@import "./components/_hero_section.scss";
-@import "./utilits/_mixins.scss";
+@import "./utils/variables"; 
+@import "./utils/fonts";
+@import "./utils/mixins";   
+@import "./utils/utils";
+
+
+@import "./base";             
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/header";
+@import "./components/hero_section";
+@import "./components/about_section";
+@import "./components/procedures_section";
+
 
 .h1 {
   font-family: var(--font-title);
@@ -82,145 +88,6 @@
   color: var(--color-secondary-dark);
 }
 
-/* #region about section */
-
-.about-us-section {
-  transform: translateY(-40px);
-  padding-bottom: 84px;
-  overflow: hidden;
-}
-
-.about-us {
-  position: relative;
-}
-
-.about-star {
-  position: absolute;
-  pointer-events: none;
-  z-index: -1;
-  animation-name: spin;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg) skew(20deg, 360deg);
-    opacity: 1;
-  }
-  25% {
-    transform: rotate(180deg);
-    opacity: 0.75;
-  }
-  50% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-  75% {
-    transform: rotate(-180deg);
-    opacity: 0.75;
-  }
-  100% {
-    transform: rotate(0deg) scale(1.5);
-    opacity: 1;
-    fill: #7df9ff;
-  }
-}
-
-.star-dark {
-  top: 50%;
-  left: 70%;
-  fill: var(--color-background-footer);
-  transform: rotate(4deg);
-  animation-delay: 1s;
-  animation-duration: 5s;
-}
-
-.star-blue {
-  top: 34px;
-  right: 0px;
-  fill: var(--color-brand);
-  transform: rotate(6deg);
-  animation-delay: 0s;
-}
-
-.star-grey {
-  top: 270px;
-  right: 18px;
-  fill: var(--color-modal-form);
-  transform: rotate(0deg);
-  animation-delay: 3s;
-}
-
-.about-text-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 32px;
-}
-
-.about-section-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 709px;
-  padding-top: 40px;
-}
-
-.about-section-title {
-  margin-bottom: 40px;
-  font-family: var(--font-title);
-  font-weight: 700;
-  font-size: 64px;
-  color: var(--color-secondary-dark);
-}
-
-.section-title-accent {
-  color: var(--color-brand);
-  text-transform: capitalize;
-}
-
-.about-text {
-  font-family: var(--font-main);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.73;
-  color: var(--color-secondary-dark);
-}
-
-.about-strong {
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-.about-img {
-  width: 336px;
-  height: 336px;
-  border-radius: 50%;
-}
-
-.about-images {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 500px;
-}
-
-.about-img.top {
-  width: 327px;
-  height: 327px;
-}
-
-.about-img.bottom {
-  width: 327px;
-  height: 328px;
-  margin-top: 100px;
-  margin-left: auto;
-}
-
-/* #endregion about section */
 
 .wave {
   background-image: url(../images/img/background.png);
@@ -279,130 +146,7 @@
 /* #endregion why us */
 /* #region procedures */
 
-.procedures-section {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
 
-.section-title.center {
-  text-align: center;
-}
-
-.procedures-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 27px;
-}
-
-.procedures-list {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.procedures-item {
-  flex: 0 0 auto;
-}
-
-.procedure-card {
-  width: 344px;
-  height: 456px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px 120px 4px 120px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 32px;
-  gap: 16px;
-  transition: transform 0.2s;
-}
-
-.procedure-card:hover {
-  transform: scale(1.05);
-}
-
-.procedure-card::after {
-  position: absolute;
-  inset: 0;
-  border-radius: 0;
-  z-index: 3;
-  pointer-events: none;
-  content: "";
-}
-
-.procedure-figure {
-  margin-bottom: 0;
-}
-
-.procedure-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px 120px 4px 120px;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.procedure-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: linear-gradient(
-    180deg,
-    rgba(1, 28, 68, 0) 45%,
-    rgba(1, 28, 68, 0.73) 100%
-  );
-
-  z-index: 1;
-}
-
-.procedure-title {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  margin-bottom: 0;
-  font-family: var(--font-main);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.18;
-  color: var(--color-primary-light);
-}
-
-.slider-icon {
-  /* fill: var(--color-primary-light); */
-  stroke-width: 2px;
-  stroke: var(--color-secondary-dark);
-  transition: stroke 0.2s;
-}
-
-.slider-btn:hover .slider-icon {
-  stroke: var(--color-primary-light);
-}
-
-.prev {
-  left: 0;
-  transform: translateX(-50%);
-}
-
-.next {
-  right: 0;
-  transform: translateX(50%);
-}
-
-.procedure-card:hover::before {
-  background-image: linear-gradient(
-    180deg,
-    rgba(1, 28, 68, 0.1) 40%,
-    rgba(1, 28, 68, 0.9) 100%
-  );
-  transition: 0.4s ease-in-out;
-}
 
 /* #endregion procedures */
 /* #region contacts */
