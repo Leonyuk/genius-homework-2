@@ -81,6 +81,22 @@
   transition: transform 0.2s;
 }
 
+  .modal-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .modal-close-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    color: var(--color-primary-light);
+    fill: currentColor;
+  }
+
 
 .button:disabled {
   color: gray;

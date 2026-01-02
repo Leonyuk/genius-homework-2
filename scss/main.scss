@@ -3,16 +3,20 @@
 @import "./utils/fonts";
 @import "./utils/typography";
 @import "./utils/utils";
+@import "./utils/animations";
 
 @import "./base";
 
 @import "./components/buttons";
+@import "./components/forms";
 @import "./components/links";
-@import "./components/header";
-@import "./components/hero_section";
-@import "./components/about_section";
-@import "./components/why_us_section";
-@import "./components/procedures_section";
-@import "./components/contacts_section";
-@import "./components/footer";
-@import "./components/modal";
+@import "./components/procedure-card";
+
+@import "./layouts/header";
+@import "./layouts/hero_section";
+@import "./layouts/about_section";
+@import "./layouts/why_us_section";
+@import "./layouts/procedures_section";
+@import "./layouts/contacts_section";
+@import "./layouts/footer";
+@import "./layouts/modal";

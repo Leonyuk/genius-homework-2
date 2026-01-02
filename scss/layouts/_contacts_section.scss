@@ -1,0 +1,23 @@
+.contacts-section {
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+}
+
+
+.contacts-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 600px;
+  height: 482px;
+}
