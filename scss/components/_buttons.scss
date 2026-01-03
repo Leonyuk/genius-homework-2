@@ -1,22 +1,3 @@
-.hero_button {
-  margin-bottom: 14px;
-  border: 2px solid var(--color-brand);
-  border-radius: 32px;
-  padding: 16px 32px;
-  height: 54px;
-  background-color: transparent;
-  font-family: var(--font-main);
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--color-secondary-dark);
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.hero_button:hover {
-  background-color: var(--color-brand);
-  color: var(--color-primary-light);
-}
 
 .form_button {
   padding: 16px 32px;
@@ -43,7 +24,6 @@
   cursor: pointer;
 }
 
-
 .slider-btn {
   display: flex;
   align-items: center;
@@ -63,7 +43,6 @@
   stroke: var(--color-primary-light);
 }
 
-
 .modal-btn-open {
   cursor: pointer;
 }
@@ -81,22 +60,21 @@
   transition: transform 0.2s;
 }
 
-  .modal-close-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
+.modal-close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
 
-  .modal-close-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-    color: var(--color-primary-light);
-    fill: currentColor;
-  }
-
+.modal-close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: var(--color-primary-light);
+  fill: currentColor;
+}
 
 .button:disabled {
   color: gray;

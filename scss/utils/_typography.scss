@@ -1,11 +1,15 @@
-.accent {
-  color: var(--color-brand);
-}
-
 .section-title {
-  margin-bottom: 48px;
   font-family: var(--font-title);
   font-weight: 700;
   font-size: 64px;
   color: var(--color-secondary-dark);
+}
+
+.text-brand {
+    color: var(--color-brand);
+  }
+
+.text-bold {
+  font-weight: 600;
+  text-transform: capitalize;
 }

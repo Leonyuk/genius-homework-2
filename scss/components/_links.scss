@@ -1,4 +1,4 @@
-.header-link {
+.header__link {
   color: var(--color-secondary-dark);
   font-family: var(--font-main);
   font-size: 18px;
@@ -7,7 +7,7 @@
   transition: color 0.2s;
 }
 
-.header-link:hover {
+.header__link:hover {
   color: var(--color-brand);
 }
 

@@ -21,28 +21,3 @@
   }
 }
 
-.about-star {
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-  animation: spin 10s linear infinite;
-
-  &.star-dark {
-    top: 50%;
-    left: 70%;
-    fill: var(--color-background-footer);
-    animation-duration: 5s;
-  }
-
-  &.star-blue {
-    top: 34px;
-    right: 0;
-    fill: var(--color-brand);
-  }
-
-  &.star-grey {
-    top: 270px;
-    right: 18px;
-    fill: var(--color-modal-form);
-  }
-}

@@ -34,6 +34,12 @@
 }
 
 .footer-logo {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.88;
+  text-transform: capitalize;
+  color: var(--color-brand);
   flex-grow: 1;
 }
 
@@ -44,7 +50,6 @@
   flex-grow: 1;
   justify-content: start;
 }
-
 
 .footer-address {
   display: flex;
@@ -65,7 +70,6 @@
   gap: 16px;
 }
 
-
 .footer-social-list {
   display: flex;
   flex-direction: row;
@@ -74,13 +78,11 @@
   gap: 24px;
 }
 
-
 .footer-social-icon {
   width: 42px;
   height: 42px;
   fill: var(--color-primary-light);
 }
-
 
 .footer-legal {
   display: flex;
@@ -101,6 +103,6 @@
   text-decoration: none;
 }
 
-.footer-policy:hover{
+.footer-policy:hover {
   color: var(--color-primary-dark);
 }
