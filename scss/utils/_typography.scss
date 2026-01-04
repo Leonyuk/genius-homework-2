@@ -3,6 +3,10 @@
   font-weight: 700;
   font-size: 64px;
   color: var(--color-secondary-dark);
+
+  &--centered {
+    text-align: center;
+  }
 }
 
 .text-brand {

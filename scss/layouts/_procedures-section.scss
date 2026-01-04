@@ -1,29 +1,18 @@
 .procedures-section {
   padding-top: 48px;
   padding-bottom: 48px;
+
+  &__section-title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+  }
 }
-
-.section-title.center {
-  text-align: center;
-}
-
-.procedures-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 27px;
-}
-
-.procedures-list {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.procedures-item {
-  flex: 0 0 auto;
-}
-
-
-
-
