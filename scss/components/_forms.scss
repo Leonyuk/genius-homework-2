@@ -1,61 +1,5 @@
-.form {
-  &_title {
-    margin-bottom: 40px;
-    font-family: var(--font-main);
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.156;
-    text-align: center;
-    color: var(--color-primary-light);
-  }
 
-  &_text {
-    margin-bottom: 32px;
-    font-weight: 600;
-    font-size: 22px;
-    text-align: center;
-    color: var(--color-primary-light);
-  }
-
-  &_field {
-    margin: 0 auto 24px;
-    max-width: 310px;
-  }
-
-  &_input {
-    width: 100%;
-    height: 52px;
-    padding: 18px 32px;
-    border: 2px solid var(--color-modal-form);
-    border-radius: 32px;
-    font-family: var(--font-main);
-    font-size: 13px;
-    line-height: 1.5;
-    background-color: transparent;
-    color: var(--color-primary-light);
-    transition: background-color 0.3s;
-
-    &:focus {
-      outline: none;
-      background-color: var(--color-modal-form);
-    }
-
-    &::placeholder {
-      color: var(--color-primary-light);
-    }
-  }
-
-  &_policy {
-    margin: 8px auto;
-    max-width: 210px;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--color-modal-form);
-  }
-}
-
-.contacts-form {
+.contact-form {
   position: relative;
   width: 100%;
   max-width: 422px;
@@ -64,16 +8,47 @@
   padding: 48px 56px;
   border-radius: 32px;
   background-color: var(--color-secondary-dark);
+  background-image: url('../images/img/bgc_contact_forms.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  .contact_text {
-    font-weight: 600;
+  &__title {
+    margin-bottom: 24px;
     font-size: 22px;
+    font-weight: 600;
     text-align: center;
     color: var(--color-primary-light);
-    margin-bottom: 24px;
   }
 
-  .contact_field {
+  &__field {
     margin-bottom: 16px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 52px;
+    padding: 18px 32px;
+    border: 2px solid var(--color-modal-form);
+    border-radius: 32px;
+    background-color: transparent;
+    color: var(--color-primary-light);
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-modal-form);
+    }
+  }
+
+  &__policy {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-modal-form);
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: underline;
   }
 }
