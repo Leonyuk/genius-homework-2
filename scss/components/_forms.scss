@@ -1,4 +1,3 @@
-
 .contact-form {
   position: relative;
   width: 100%;
@@ -8,7 +7,7 @@
   padding: 48px 56px;
   border-radius: 32px;
   background-color: var(--color-secondary-dark);
-  background-image: url('../images/img/bgc_contact_forms.png');
+  background-image: url("../images/img/bgc_contact_forms.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,6 +36,15 @@
     &:focus {
       outline: none;
       background-color: var(--color-modal-form);
+    }
+
+    &::placeholder {
+      color: var(--color-modal-form);
+      opacity: 1;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-light);
     }
   }
 
