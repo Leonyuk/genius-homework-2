@@ -203,7 +203,7 @@
       </section>
     </div>
     <section id="contacts-section" class="contacts-section">
-      <div class="container">
+      <div class="container contacts-section__container">
         <h2 class="contacts-section__title section-title section-title--centered">
           Як нас <span class="text-brand">знайти</span>
         </h2>
@@ -214,24 +214,24 @@
                 Запишіться <span class="text-brand">безкоштовно</span><br>
                 та отримайте подарунок
               </h3>
-              <div class="contact-form__field">
-                <label class="form_label visually_hidden" for="user-name">Ваше імʼя</label>
-                <input class="contact-form__input" id="user-name" placeholder="Ваше імʼя та прізвище">
+              <div class="contact-form__field input">
+                <label class="input__label visually_hidden" for="user-name">Ваше імʼя</label>
+                <input class="input__control" id="user-name" placeholder="Ваше імʼя та прізвище">
+              </div>              
+              <div class="contact-form__field input">
+                <label class="input__label visually_hidden" for="user-tel">Телефон</label>
+                <input class="input__control" id="user-tel" placeholder="Ваш номер телефону">
               </div>
-              <div class="contact-form__field">
-                <label class="form_label visually_hidden" for="user-tel">Телефон</label>
-                <input class="contact-form__input" id="user-tel" placeholder="Ваш номер телефону">
+              <div class="contact-form__field input">
+                <label class="input__label visually_hidden" for="user-email">Email</label>
+                <input class="input__control" id="user-email" placeholder="Ваша електронна пошта">
               </div>
-              <div class="contact-form__field">
-                <label class="form_label visually_hidden" for="user-email">Email</label>
-                <input class="contact-form__input" id="user-email" placeholder="Ваша електронна пошта">
-              </div>
-              <button class="form_button button" type="submit">
+              <button class="contacts-section__button button" type="submit">
                 Записатись безкоштовно
               </button>
-              <p class="contact-form__policy">
+              <p class="form-terms__policy">
                 Натискаючи кнопку ви погоджуєтесь
-                <a class="contact-form__link" href="./privacy.html" target="_blank">
+                <a class="form-terms__link" href="./privacy.html" target="_blank">
                   з політикою конфіденційності
                 </a>
               </p>
@@ -328,7 +328,7 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn-close" type="button" data-modal-close><span class="modal-close-icon"><svg width="18"
+      <button class="modal__btn-close" type="button" data-modal-close><span class="modal-close__icon"><svg width="18"
             height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.5 4.5L4.5 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -340,19 +340,19 @@
 
         <p class="form_text">Запишіться <span class="text-brand">безкоштовно</span><br>
           та отримайте подарунок</p>
-        <div class="form_field">
-          <label class="form_label visually_hidden">Ваше ім'я та прізвище</label>
-          <input class="form_input" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище"
+        <div class="modal__form-field  input">
+          <label class="input visually_hidden">Ваше ім'я та прізвище</label>
+          <input class="input_control" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище"
             pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$" required />
         </div>
-        <div class="form_field">
-          <label class="form_label visually_hidden">Ваш номер телефону</label>
-          <input class="form_input" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
+        <div class="modal__form-field input">
+          <label class="input visually_hidden">Ваш номер телефону</label>
+          <input class="input_control" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
             pattern="^\+[0-9]{12}" required />
         </div>
-        <div class="form_field">
-          <label class="form_label visually_hidden">Ваша електронна пошта</label>
-          <input class="form_input" id="user-email" name="user-email" placeholder="Ваша електронна пошта"
+        <div class="modal__form-field input">
+          <label class="input visually_hidden">Ваша електронна пошта</label>
+          <input class="input_control" id="user-email" name="user-email" placeholder="Ваша електронна пошта"
             pattern=".*@.*" required />
         </div>
         <button class="form_button button" type="submit">Записатись безкоштовно</button>

@@ -1,0 +1,38 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &__control {
+    width: 100%;
+    height: 52px;
+    padding: 18px 32px;
+    border: 2px solid var(--color-modal-form);
+    border-radius: 32px;
+    background-color: transparent;
+    color: var(--color-primary-light);
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-modal-form);
+    }
+
+    &::placeholder {
+      color: var(--color-modal-form);
+      opacity: 1;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-light);
+    }
+  }
+}

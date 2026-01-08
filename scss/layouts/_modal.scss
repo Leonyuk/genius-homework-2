@@ -27,10 +27,39 @@
   max-height: 680px;
   padding: 42px 144px;
   background-color: var(--color-secondary-dark);
-  background-image: url('../images/img/modal_background_vektor.png');
+  background-image: url("../images/img/modal_background_vektor.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 48px;
   overflow-y: auto;
+
+  &__btn-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s;
+  }
+
+  &__btn-close-icon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    color: var(--color-primary-light);
+  }
+
+  &__formfield {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
 }

@@ -4,6 +4,15 @@
   padding-top: 84px;
   padding-bottom: 48px;
 
+  &__title {
+    font-family: var(--font-main);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: var(--color-primary-dark);
+    margin-bottom: 40px;
+  }
+
   &__container {
     max-width: 1108px;
     width: 100%;
